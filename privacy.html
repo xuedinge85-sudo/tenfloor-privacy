@@ -1,0 +1,518 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>《残楼 15F》隐私政策 · TENFLOOR Privacy Policy</title>
+<meta name="description" content="《残楼 15F》(TENFLOOR) 隐私政策：本游戏为纯离线单机 H5 游戏，不收集、不上传、不共享任何个人信息，仅在本机浏览器保存游戏进度存档。" />
+<meta name="robots" content="index,follow" />
+<!-- 部署到公网后：把下面 href 改成你的真实地址，例如 https://your-domain.com/tenfloor/privacy.html -->
+<link rel="canonical" href="https://xuedinge85-sudo.github.io/tenfloor-privacy/privacy.html" />
+<style>
+  :root{
+    --bg:#08090b; --bg-2:#0d1013; --panel:#11151a; --panel-2:#151a20;
+    --line:#242b33; --line-soft:#1b2129;
+    --cream:#e9dfc8; --cream-dim:#c3b9a2; --muted:#8d8574;
+    --amber:#e3b166; --amber-bright:#f6ce84; --amber-deep:#a9814a;
+    --green:#93b06a; --red:#c05a4e;
+    --serif:"Songti SC","SimSun","Source Han Serif SC","Noto Serif SC",Georgia,serif;
+    --sans:"Microsoft YaHei","PingFang SC","Noto Sans SC","Hiragino Sans GB",system-ui,sans-serif;
+    --mono:"Consolas","Cascadia Mono","SFMono-Regular","Courier New",monospace;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+  body{
+    margin:0;padding:0;background:var(--bg);color:var(--cream-dim);
+    font-family:var(--sans);font-size:16px;line-height:1.85;
+    background-image:
+      radial-gradient(900px 420px at 50% -120px, #171d23 0%, transparent 70%),
+      radial-gradient(circle at 18% 22%, rgba(227,177,102,.05) 0 1px, transparent 1px),
+      radial-gradient(circle at 72% 61%, rgba(227,177,102,.04) 0 1px, transparent 1px);
+    background-size:auto,9px 11px,13px 9px;
+  }
+  .skip{position:absolute;left:-9999px;top:0;background:var(--amber);color:#14100a;padding:10px 16px;z-index:99;font-weight:700}
+  .skip:focus{left:12px;top:12px}
+
+  /* ---------- 页眉 ---------- */
+  header.doc-head{
+    border-bottom:1px solid var(--line-soft);
+    background:linear-gradient(to bottom,rgba(10,12,14,.98),rgba(8,9,11,.86));
+    padding:44px 24px 34px;
+  }
+  .head-inner{max-width:940px;margin:0 auto}
+  .brand{display:flex;align-items:center;gap:13px;flex-wrap:wrap}
+  .brand-mark{
+    width:38px;height:38px;flex:0 0 38px;display:grid;place-items:center;
+    border:1px solid var(--amber-deep);background:rgba(227,177,102,.08);
+    color:var(--amber);font-family:var(--mono);font-size:15px;font-weight:700;
+    clip-path:polygon(0 0,100% 0,100% 74%,86% 100%,0 100%);
+  }
+  .brand-name{font-size:19px;font-weight:900;color:var(--cream);letter-spacing:2px}
+  .brand-name span{font-family:var(--mono);font-size:12px;color:var(--amber);letter-spacing:2px;margin-left:8px;font-weight:400}
+  h1.doc-title{
+    margin:26px 0 0;font-family:var(--serif);font-size:clamp(26px,4.4vw,42px);
+    line-height:1.3;color:var(--cream);letter-spacing:1px;font-weight:700;
+  }
+  .doc-sub{margin:10px 0 0;font-family:var(--mono);font-size:12px;letter-spacing:3px;color:var(--muted);text-transform:uppercase}
+  .meta{margin-top:20px;display:flex;gap:10px;flex-wrap:wrap;font-size:13px;font-family:var(--mono)}
+  .meta span{border:1px solid var(--line);background:rgba(255,255,255,.02);padding:4px 11px;color:var(--cream-dim);letter-spacing:.5px}
+
+  /* ---------- 摘要 ---------- */
+  .summary{max-width:940px;margin:0 auto;padding:0 24px}
+  .summary-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(196px,1fr));gap:12px;margin-top:-2px;padding-top:30px}
+  .sum-card{border:1px solid var(--line);border-left:3px solid var(--amber-deep);background:var(--panel);padding:15px 17px}
+  .sum-card b{display:block;color:var(--cream);font-size:15px;letter-spacing:.4px;margin-bottom:5px}
+  .sum-card .ico{font-family:var(--mono);font-size:11px;color:var(--amber);letter-spacing:2px;display:block;margin-bottom:7px}
+  .sum-card p{margin:0;font-size:13.5px;line-height:1.7;color:var(--muted)}
+
+  /* ---------- 正文 ---------- */
+  main{max-width:940px;margin:0 auto;padding:34px 24px 72px}
+  .notice{
+    border:1px solid var(--line);background:linear-gradient(180deg,rgba(227,177,102,.055),rgba(227,177,102,.012));
+    padding:20px 23px;margin:0 0 30px;
+  }
+  .notice h2{margin:0 0 10px;font-size:16px;color:var(--amber-bright);letter-spacing:1px;font-family:var(--sans)}
+  .notice ul{margin:0;padding-left:1.25em}
+  .notice li{margin:6px 0;font-size:14.5px;color:var(--cream-dim)}
+  .notice strong{color:var(--cream)}
+
+  nav.toc{border:1px solid var(--line-soft);background:var(--bg-2);padding:22px 24px;margin:0 0 40px}
+  nav.toc h2{margin:0 0 14px;font-size:13px;font-family:var(--mono);letter-spacing:3px;color:var(--amber);font-weight:400}
+  nav.toc ol{margin:0;padding-left:0;list-style:none;counter-reset:toc;
+    display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:2px 22px}
+  nav.toc li{counter-increment:toc}
+  nav.toc a{display:block;padding:5px 0 5px 30px;position:relative;color:var(--cream-dim);text-decoration:none;font-size:14.5px;border-bottom:1px dashed transparent}
+  nav.toc a::before{content:counter(toc,decimal-leading-zero);position:absolute;left:0;font-family:var(--mono);font-size:12px;color:var(--amber-deep)}
+  nav.toc a:hover,nav.toc a:focus{color:var(--amber-bright);border-bottom-color:var(--line)}
+
+  section.chapter{margin:0 0 46px;scroll-margin-top:24px}
+  section.chapter>h2{
+    font-family:var(--serif);font-size:clamp(19px,2.6vw,24px);color:var(--cream);
+    margin:0 0 6px;padding-bottom:11px;border-bottom:1px solid var(--line);
+    letter-spacing:.6px;display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;
+  }
+  section.chapter>h2 .num{font-family:var(--mono);font-size:12px;color:var(--amber);letter-spacing:2px;font-weight:400}
+  h3{font-size:16px;color:var(--amber-bright);margin:26px 0 8px;letter-spacing:.5px;font-weight:700}
+  h3 .tag{font-family:var(--mono);font-size:11px;color:var(--muted);letter-spacing:1px;font-weight:400;margin-left:8px}
+  p{margin:10px 0}
+  strong{color:var(--cream)}
+  em{font-style:normal;color:var(--amber)}
+  ul,ol{padding-left:1.35em;margin:10px 0}
+  li{margin:6px 0}
+  code{font-family:var(--mono);font-size:.88em;background:rgba(227,177,102,.1);border:1px solid rgba(227,177,102,.18);
+       color:var(--amber-bright);padding:1px 6px;border-radius:2px;white-space:nowrap}
+
+  .callout{border-left:3px solid var(--green);background:rgba(147,176,106,.06);padding:13px 18px;margin:18px 0;font-size:14.5px}
+  .callout.warn{border-left-color:var(--red);background:rgba(192,90,78,.07)}
+  .callout b{color:var(--cream)}
+
+  .tbl-wrap{overflow-x:auto;margin:16px 0;border:1px solid var(--line)}
+  table{border-collapse:collapse;width:100%;min-width:520px;font-size:14px}
+  th,td{padding:10px 13px;text-align:left;border-bottom:1px solid var(--line-soft);vertical-align:top}
+  thead th{background:var(--panel-2);color:var(--amber);font-size:12.5px;letter-spacing:1px;font-weight:700;white-space:nowrap;border-bottom:1px solid var(--line)}
+  tbody tr:nth-child(even){background:rgba(255,255,255,.014)}
+  td.yes-no{font-family:var(--mono);white-space:nowrap}
+  .no{color:var(--green)}
+  .yes{color:var(--red)}
+  td code{white-space:nowrap}
+
+  .contact-card{border:1px solid var(--amber-deep);background:linear-gradient(180deg,rgba(227,177,102,.07),rgba(227,177,102,.015));padding:22px 24px;margin:18px 0}
+  .contact-card dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:9px 20px;align-items:baseline}
+  .contact-card dt{color:var(--muted);font-size:13px;letter-spacing:1px;white-space:nowrap}
+  .contact-card dd{margin:0;color:var(--cream);font-size:15px;word-break:break-all}
+  .contact-card a{color:var(--amber-bright)}
+
+  .url-slot{
+    display:inline-block;font-family:var(--mono);font-size:13px;color:var(--amber);
+    border-bottom:1px dotted var(--amber-deep);padding-bottom:1px;
+  }
+  .todo{outline:1px dashed var(--amber-deep);outline-offset:2px}
+
+  footer.doc-foot{border-top:1px solid var(--line-soft);background:var(--bg-2);padding:30px 24px 46px}
+  .foot-inner{max-width:940px;margin:0 auto;font-size:13px;color:var(--muted);line-height:1.9}
+  .foot-inner .links{display:flex;gap:18px;flex-wrap:wrap;margin-bottom:12px;font-family:var(--mono);font-size:12px;letter-spacing:1px}
+  .foot-inner a{color:var(--cream-dim);text-decoration:none;border-bottom:1px solid var(--line)}
+  .foot-inner a:hover{color:var(--amber-bright);border-bottom-color:var(--amber-deep)}
+  .foot-note{border-top:1px solid var(--line-soft);margin-top:16px;padding-top:14px;font-size:12.5px}
+
+  a{color:var(--amber)}
+  a:focus-visible,button:focus-visible{outline:2px solid var(--amber-bright);outline-offset:2px}
+
+  @media (max-width:640px){
+    body{font-size:15px;line-height:1.8}
+    header.doc-head{padding:30px 18px 26px}
+    .summary,main,footer.doc-foot{padding-left:18px;padding-right:18px}
+    .contact-card dl{grid-template-columns:1fr;gap:2px}
+    .contact-card dd{margin-bottom:10px}
+    th,td{padding:9px 10px}
+  }
+  @media print{
+    html,body{background:#fff!important;color:#111!important;font-size:11.5pt}
+    body{background-image:none!important}
+    header.doc-head{border-bottom:2px solid #111;background:#fff!important;padding:0 0 10pt}
+    .brand-mark{border-color:#111;color:#111;background:#fff}
+    .brand-name,h1.doc-title,strong,h3,section.chapter>h2{color:#000!important}
+    .brand-name span,.doc-sub,.meta span,section.chapter>h2 .num{color:#444!important}
+    .summary-grid,nav.toc,.notice,.callout,.contact-card,.tbl-wrap{break-inside:avoid}
+    .sum-card,.notice,nav.toc,.contact-card,.callout{border-color:#999!important;background:#fff!important}
+    .sum-card p,.notice li,.foot-inner,td,th{color:#222!important}
+    thead th{background:#eee!important;color:#000!important;border-bottom:1px solid #333}
+    th,td{border-bottom:1px solid #ccc;color:#111!important}
+    td code,code{background:#f2f2f2!important;border-color:#ccc!important;color:#000!important}
+    .no{color:#0a6b2d!important}
+    a{color:#000!important;text-decoration:underline}
+    section.chapter{page-break-inside:auto}
+    section.chapter>h2{page-break-after:avoid}
+    nav.toc{display:none}
+    footer.doc-foot{background:#fff!important;border-top:1px solid #999}
+    .foot-inner,.foot-note{color:#333!important}
+  }
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">跳到正文</a>
+
+<header class="doc-head">
+  <div class="head-inner">
+    <div class="brand">
+      <div class="brand-mark" aria-hidden="true">15F</div>
+      <div class="brand-name">残楼 15F<span>TENFLOOR</span></div>
+    </div>
+    <h1 class="doc-title">《残楼 15F》隐私政策</h1>
+    <p class="doc-sub">Privacy Policy</p>
+    <div class="meta">
+      <span>版本 v1.0</span>
+      <span>更新日期 2026-10-23</span>
+      <span>生效日期 2026-10-23</span>
+      <span>适用范围：残楼 15F 全部发行版本</span>
+    </div>
+  </div>
+</header>
+
+<div class="summary">
+  <div class="summary-grid">
+    <div class="sum-card">
+      <span class="ico">01 / NO COLLECT</span>
+      <b>不收集个人信息</b>
+      <p>无账号、无登录、无实名认证，不读取手机号、位置、设备标识、通讯录、相册、摄像头或麦克风。</p>
+    </div>
+    <div class="sum-card">
+      <span class="ico">02 / OFFLINE</span>
+      <b>完全离线运行</b>
+      <p>游戏程序与美术、音频资源全部内嵌在一个网页文件中，运行时不会向任何服务器发送数据。</p>
+    </div>
+    <div class="sum-card">
+      <span class="ico">03 / LOCAL SAVE</span>
+      <b>存档只存在你本机</b>
+      <p>游戏进度保存在你自己设备的浏览器存储中，不会上传、不会备份到远程，可随时一键删除。</p>
+    </div>
+    <div class="sum-card">
+      <span class="ico">04 / NO SDK</span>
+      <b>无第三方 SDK</b>
+      <p>不接入统计、广告、登录分享、推送、崩溃上报等任何第三方组件，无内购、无广告。</p>
+    </div>
+  </div>
+</div>
+
+<main id="main">
+
+  <div class="notice">
+    <h2>温馨提示</h2>
+    <p>欢迎您使用《残楼 15F》（英文名 TENFLOOR，以下简称"本游戏"）。本游戏由<strong>周洲</strong>（以下简称"我们"）开发并运营。我们非常重视保护您的个人信息和隐私。请您在使用本游戏前，仔细阅读并充分理解本政策的内容：</p>
+    <ul>
+      <li>本游戏是一款<strong>纯离线的单机浏览器（H5）游戏</strong>，请您在使用前了解这一点——它不需要注册、不联网、也不上传任何数据。</li>
+      <li>我们<strong>不收集、不上传、不共享、不出售</strong>您的任何个人信息。</li>
+      <li>为了记住您的游戏进度，本游戏会在<strong>您自己的设备</strong>上保存一份本地存档；该存档不会离开您的设备。</li>
+      <li>本游戏<strong>不申请任何设备系统权限</strong>（如定位、相机、麦克风、通讯录、存储读写等）。</li>
+      <li>本游戏包含丧尸、战斗、血腥等元素，<strong>建议年满 16 周岁</strong>后游玩；如您是未成年人，请在监护人陪同下阅读本政策并使用本游戏。</li>
+      <li>您开始游玩本游戏，即表示您已阅读并同意本政策；如您不同意，请停止使用并删除本游戏文件。</li>
+    </ul>
+  </div>
+
+  <nav class="toc" aria-labelledby="toc-title">
+    <h2 id="toc-title">CONTENTS · 目录</h2>
+    <ol>
+      <li><a href="#c1">我们如何收集和使用您的个人信息</a></li>
+      <li><a href="#c2">我们如何保存您的个人信息</a></li>
+      <li><a href="#c3">我们如何使用 Cookies 及同类技术</a></li>
+      <li><a href="#c4">我们如何共享、转让、公开披露您的个人信息</a></li>
+      <li><a href="#c5">第三方产品或服务如何获得您的个人信息</a></li>
+      <li><a href="#c6">我们如何保护您的个人信息</a></li>
+      <li><a href="#c7">您如何管理您的个人信息</a></li>
+      <li><a href="#c8">我们如何处理未成年人的个人信息</a></li>
+      <li><a href="#c9">本隐私政策如何更新</a></li>
+      <li><a href="#c10">如何联系我们</a></li>
+      <li><a href="#appe">附录：游戏信息与清单</a></li>
+    </ol>
+  </nav>
+
+  <section class="chapter" id="c1">
+    <h2><span class="num">01</span>我们如何收集和使用您的个人信息</h2>
+
+    <h3>（一）收集情况总览</h3>
+    <p>本游戏<strong>没有服务器、没有账号体系、不发起任何网络请求</strong>，因此在游戏运行过程中，我们不会收集、读取或上传下列任何一类信息：</p>
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr><th>信息类型</th><th>是否收集</th><th>说明</th></tr></thead>
+        <tbody>
+          <tr><td>手机号码、电子邮箱、登录密码</td><td class="yes-no no">不收集</td><td>本游戏无注册与登录功能，无需提供任何账号信息。</td></tr>
+          <tr><td>姓名、身份证件类型及号码</td><td class="yes-no no">不收集</td><td>无实名认证流程。</td></tr>
+          <tr><td>设备标识符（IMEI、IDFA、OAID、Android ID、MAC 等）</td><td class="yes-no no">不收集</td><td>不调用任何设备标识相关接口。</td></tr>
+          <tr><td>IP 地址、访问时间、网络日志</td><td class="yes-no no">不收集</td><td>游戏不发送网络请求，我们不运营接收数据的服务器，客观上无法获得此类信息。</td></tr>
+          <tr><td>精确或粗略地理位置</td><td class="yes-no no">不收集</td><td>未申请、未调用定位能力。</td></tr>
+          <tr><td>通讯录、短信、通话记录、日历</td><td class="yes-no no">不收集</td><td>不涉及。</td></tr>
+          <tr><td>相册、摄像头、麦克风、剪贴板</td><td class="yes-no no">不收集</td><td>不涉及；游戏不读取也不写入剪贴板。</td></tr>
+          <tr><td>支付信息、充值消费记录</td><td class="yes-no no">不收集</td><td>本游戏无充值、无内购、无虚拟货币交易。</td></tr>
+          <tr><td>应用列表、生物识别、健康与运动数据</td><td class="yes-no no">不收集</td><td>不涉及。</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>（二）本机存档：唯一写入您设备的数据<span class="tag">LOCAL STORAGE</span></h3>
+    <p>为了让您下次打开游戏时能继续上一次的生存进度，本游戏会使用浏览器标准的<strong>本地存储（Web Storage / localStorage）</strong>保存一份存档。这是本游戏<strong>唯一</strong>写入您设备的数据：</p>
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr><th>存储项</th><th>键名</th><th>包含内容</th><th>用途</th><th>是否上传</th></tr></thead>
+        <tbody>
+          <tr>
+            <td>游戏进度存档</td>
+            <td><code>ruin15-campaign-v1</code></td>
+            <td>当前角色的生命值与状态、所在楼层与房间状态、已搜刮资源与背包数量、楼内 NPC 的存活与关系状态、镜头视角与已解锁情报等<strong>游戏内数据</strong></td>
+            <td>支持标题页"继续生存"，恢复上次进度</td>
+            <td class="yes-no no">不上传</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p>该存档<strong>不包含任何可识别您个人身份的信息</strong>（不含姓名、手机号、邮箱、设备号、位置等），仅保存在您当前使用的浏览器中，<strong>不会上传至任何服务器，我们也无法读取</strong>。您可以通过第七节说明的方式随时删除。</p>
+
+    <h3>（三）设备权限调用情况</h3>
+    <p>本游戏在浏览器中运行，<strong>不申请任何设备系统权限</strong>。您在游玩时可能看到的下列浏览器原生行为，均由浏览器或系统自身控制，不涉及个人信息收集：</p>
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr><th>能力 / 权限</th><th>是否申请</th><th>说明</th></tr></thead>
+        <tbody>
+          <tr><td>定位、相机、麦克风、通讯录、相册、存储读写</td><td class="yes-no no">不申请</td><td>游戏代码中不存在相关调用。</td></tr>
+          <tr><td>本地存储写入</td><td class="yes-no">使用</td><td>仅用于上述游戏进度存档，不需要授权弹窗。</td></tr>
+          <tr><td>声音播放</td><td class="yes-no">使用</td><td>播放内嵌的游戏音效与背景音乐，部分浏览器要求在您点击后才能开始播放。</td></tr>
+          <tr><td>全屏显示、横屏提示</td><td class="yes-no">由浏览器控制</td><td>是否生效取决于您的浏览器设置，不涉及个人信息。</td></tr>
+          <tr><td>推送通知</td><td class="yes-no no">不申请</td><td>本游戏不会向您发送任何通知。</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>（四）无需取得您同意的情形</h3>
+    <p>由于本游戏不处理您的个人信息，该情形在当前版本中并不适用。若未来依据法律法规或国家标准的规定，我们确需在无需取得您授权同意的情况下处理相关信息（例如与履行法定义务直接相关），我们将严格限定在法律允许的范围内，并在本政策更新时予以明确说明。</p>
+  </section>
+
+  <section class="chapter" id="c2">
+    <h2><span class="num">02</span>我们如何保存您的个人信息</h2>
+    <ul>
+      <li><strong>我们不运营任何服务器，不存储您的任何个人信息。</strong>本游戏没有后端接口、没有云存档、没有数据回传通道。</li>
+      <li>游戏进度存档保存在<strong>您本人设备的浏览器存储空间</strong>内。不同浏览器、不同设备、不同网址来源下的存档彼此独立，互不通用。</li>
+      <li>保存期限：<strong>直至您主动删除或浏览器自动清理</strong>。我们无法设定、也无法延长该期限，因为数据不在我们手中。</li>
+      <li>跨境传输：不存在。数据从未离开您的设备，因此不涉及任何个人信息出境情形。</li>
+    </ul>
+    <div class="callout warn">
+      <b>请注意：</b>本地存档具有"仅存于本机"的固有特性。下列操作会导致存档<strong>永久丢失且无法找回</strong>：清除浏览器"Cookie 及其他网站数据"、使用无痕/隐私模式游玩、更换浏览器或设备、删除或替换游戏文件、浏览器存储空间不足被系统清理、重装操作系统。我们无法为您恢复存档，请在重要进度时留意。
+    </div>
+  </section>
+
+  <section class="chapter" id="c3">
+    <h2><span class="num">03</span>我们如何使用 Cookies 及同类技术</h2>
+    <p><strong>本游戏不使用 Cookie，也不使用任何同类跟踪技术。</strong></p>
+    <ul>
+      <li>不写入或读取 Cookie、Flash Cookie、ETag 等本地标识；</li>
+      <li>不使用像素标签（Pixel）、网络信标（Web Beacon）、设备指纹、UBA 用户行为分析等追踪手段；</li>
+      <li>不含任何统计埋点，不进行广告归因，不构建用户画像，不开展个性化推荐；</li>
+      <li>因此，本游戏不需要、也不会向您请求 Cookie 使用授权，您无需进行任何相关设置。</li>
+    </ul>
+    <p>补充说明：若您是通过某个第三方网站、应用商店或平台页面打开本游戏的，该网站或平台自身的 Cookie 与信息处理行为由其运营者负责，适用其自己的隐私政策，不属于本政策的范围。</p>
+  </section>
+
+  <section class="chapter" id="c4">
+    <h2><span class="num">04</span>我们如何共享、转让、公开披露您的个人信息</h2>
+    <ul>
+      <li><strong>共享：</strong>不存在。我们未收集您的个人信息，客观上没有可供共享的数据。</li>
+      <li><strong>转让：</strong>不存在。本游戏不涉及任何形式的合并、收购或资产转让导致的信息转移。</li>
+      <li><strong>公开披露：</strong>不存在。我们不会公开任何与您相关的信息。</li>
+      <li><strong>委托处理：</strong>不存在。我们没有委托任何第三方处理您的个人信息（无数据分析、无广告投放、无客服外包数据处理）。</li>
+    </ul>
+    <p>若未来依法需要配合司法机关或行政机关的合法要求，我们将在法律明确要求的范围内处理并（在法律允许时）告知您；但基于本游戏当前的实现，我们并不持有可以向任何第三方提供的个人信息。</p>
+  </section>
+
+  <section class="chapter" id="c5">
+    <h2><span class="num">05</span>第三方产品或服务如何获得您的个人信息</h2>
+
+    <h3>（一）本游戏未集成任何第三方 SDK</h3>
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr><th>第三方类型</th><th>常见示例</th><th>本游戏是否集成</th></tr></thead>
+        <tbody>
+          <tr><td>数据统计与分析</td><td>友盟、神策、Google Analytics、Umeng+</td><td class="yes-no no">未集成</td></tr>
+          <tr><td>广告投放</td><td>穿山甲、优量汇、AdMob、TapADN</td><td class="yes-no no">未集成</td></tr>
+          <tr><td>账号登录 / 社交分享</td><td>微信、QQ、微博、Apple 登录</td><td class="yes-no no">未集成</td></tr>
+          <tr><td>推送服务</td><td>极光推送、个推、厂商推送通道</td><td class="yes-no no">未集成</td></tr>
+          <tr><td>崩溃监控 / 性能监控</td><td>Bugly、Sentry、Firebase Crashlytics</td><td class="yes-no no">未集成</td></tr>
+          <tr><td>支付与内购</td><td>微信支付、支付宝、App Store 内购</td><td class="yes-no no">未集成</td></tr>
+          <tr><td>云端存档 / 后端服务</td><td>LeanCloud、Firebase、自建服务器</td><td class="yes-no no">未集成</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>（二）关于分发渠道</h3>
+    <p>若您通过应用商店、游戏平台（如 TapTap 等）、浏览器或社交软件等<strong>第三方渠道下载、打开或分享</strong>本游戏，该渠道在分发过程中可能自行收集您的设备信息、安装信息与访问日志。此类行为由该渠道运营者独立实施，适用其自己的隐私政策与用户协议，<strong>不适用本政策，我们也无法控制或介入</strong>。建议您在使用前阅读相应渠道的隐私政策。</p>
+
+    <h3>（三）游戏内无外部跳转</h3>
+    <p>本游戏内不含任何第三方网页嵌入、外部链接跳转、在线支付入口或需要授权登录的社交功能。</p>
+  </section>
+
+  <section class="chapter" id="c6">
+    <h2><span class="num">06</span>我们如何保护您的个人信息</h2>
+    <ul>
+      <li><strong>不存在传输与服务器端风险。</strong>由于本游戏不联网、不收集、不上传个人信息，您的信息不会经过网络传输，也不会存储在我们的服务器上，因此不存在由此产生的泄露、篡改或滥用风险。</li>
+      <li><strong>本地存档受浏览器同源策略保护。</strong>该存档仅能被本游戏页面所在源读取，其他网站无法直接访问。</li>
+      <li><strong>无账号，无账号被盗风险。</strong>本游戏不需要密码、验证码或任何凭证。</li>
+      <li><strong>我们建议您：</strong>从可信来源获取游戏文件；不要使用来源不明的"修改版""破解版""外挂版"文件，此类文件可能被他人植入恶意代码；在公共或共享设备上游玩后，请清除浏览器站点数据。</li>
+    </ul>
+    <p>若您认为发生了与本游戏相关的信息安全事件，可通过第十节的方式联系我们。由于存档不含个人身份信息，相关风险极低；我们仍会在收到通知后 <strong>15 个工作日</strong>内答复并协助您排查。</p>
+  </section>
+
+  <section class="chapter" id="c7">
+    <h2><span class="num">07</span>您如何管理您的个人信息</h2>
+
+    <h3>（一）访问、更正、复制</h3>
+    <p>我们<strong>不保存您的个人信息</strong>，因此不存在可供访问、更正或复制的个人数据。您的游戏进度数据完全由您本机掌握，可通过游戏内的结算界面查看。</p>
+
+    <h3>（二）删除本地存档</h3>
+    <p>您可以通过以下任一方式彻底删除游戏进度数据：</p>
+    <ol>
+      <li><strong>游戏内：</strong>开始一局新游戏会覆盖原有存档；</li>
+      <li><strong>浏览器设置：</strong>进入"设置 → 隐私与安全 → 清除浏览数据"，勾选"Cookie 及其他网站数据"后清除（不同浏览器路径略有差异）；</li>
+      <li><strong>删除文件：</strong>若您是以独立网页文件形式保存本游戏，直接删除该文件即可；</li>
+      <li><strong>开发者工具：</strong>在浏览器控制台执行 <code>localStorage.removeItem('ruin15-campaign-v1')</code>。</li>
+    </ol>
+
+    <h3>（三）撤回同意</h3>
+    <p>本游戏不依赖您的持续授权即可运行。您只需<strong>停止使用并删除游戏文件</strong>，即视为撤回对本政策的同意；撤回不影响此前基于您的同意已进行的处理行为的效力（如有）。</p>
+
+    <h3>（四）注销账号</h3>
+    <p>本游戏<strong>不设账号体系</strong>，无需注册，因此也不存在账号注销流程。</p>
+
+    <h3>（五）响应您的请求</h3>
+    <p>为保障安全，我们可能需要您提供必要信息以核验身份（例如您通过邮件联系我们时使用的邮箱地址）。我们将在收到您的请求并核验后 <strong>15 个工作日</strong>内予以答复。对于合理请求，我们原则上不收取费用；对多次重复、超出合理限度的请求，我们可能予以拒绝并说明理由。</p>
+    <p>在下列情形下，我们将无法响应您的请求：与履行法律法规规定的义务相关的；与国家安全、国防安全直接相关的；与公共安全、公共卫生、重大公共利益直接相关的；与刑事侦查、起诉、审判和执行判决等直接相关的；有充分证据表明您存在主观恶意或滥用权利的；出于维护您或其他个人的生命、财产等重大合法权益但又很难得到本人同意的；响应您的请求将导致您或其他个人、组织的合法权益受到严重损害的；涉及商业秘密的。</p>
+  </section>
+
+  <section class="chapter" id="c8">
+    <h2><span class="num">08</span>我们如何处理未成年人的个人信息</h2>
+    <ul>
+      <li><strong>适龄提示：</strong>本游戏包含丧尸题材、战斗与血腥表现，属于<strong>建议 16 周岁以上</strong>游玩的内容。我们不以未满 14 周岁的儿童为目标用户，也不会针对儿童进行任何形式的推广。</li>
+      <li><strong>不收集未成年人信息：</strong>由于本游戏不收集任何用户的个人信息，因此也不存在需要取得监护人单独同意的个人信息处理场景。我们不会收集、存储、使用、共享或公开披露未成年人的任何个人信息。</li>
+      <li><strong>监护人指引：</strong>如您是未成年人的监护人，建议通过设备的"家长控制""屏幕使用时间""应用限额"等功能合理安排游玩时间。本游戏<strong>无内购、无广告、无抽奖</strong>，不会产生任何消费或诱导消费。</li>
+      <li><strong>特殊情况：</strong>若您（作为监护人）主动通过邮件把存档文件或其他资料发送给我们用于排查问题，其中可能间接包含未成年人相关信息，我们仅将该信息用于您指定的排查目的，并在处理完成后及时删除。若您认为我们意外获取了未成年人的个人信息，请通过第十节联系我们，我们将在核实后立即删除。</li>
+      <li><strong>法律依据：</strong>我们遵守《中华人民共和国个人信息保护法》《中华人民共和国未成年人保护法》《儿童个人信息网络保护规定》等法律法规对未成年人个人信息保护的特别要求。</li>
+    </ul>
+  </section>
+
+  <section class="chapter" id="c9">
+    <h2><span class="num">09</span>本隐私政策如何更新</h2>
+    <ul>
+      <li>我们可能因游戏功能调整、发行渠道变化或法律法规要求而更新本政策。</li>
+      <li>更新后的政策将在本页面公布，并同步更新页面顶部的"版本号""更新日期"与"生效日期"，更新版本自标明的生效日期起生效。</li>
+      <li>若发生<strong>重大变更</strong>——例如开始收集个人信息、接入第三方 SDK、新增账号或支付功能、个人信息的使用目的或方式发生实质变化、您的权利行使方式发生重大变化——我们会在游戏内或本页面以<strong>显著方式</strong>提示，必要时重新征求您的明示同意。</li>
+      <li>未经您明确同意，我们不会削减您依据本政策所应享有的权利。</li>
+      <li>历史版本我们将予以留存，您可通过第十节的联系方式索取。</li>
+    </ul>
+  </section>
+
+  <section class="chapter" id="c10">
+    <h2><span class="num">10</span>如何联系我们</h2>
+    <p>若您对本政策、本游戏的信息处理方式有任何疑问、意见、投诉或举报，或希望行使上述任何权利，可通过以下方式与我们联系：</p>
+    <div class="contact-card">
+      <dl>
+        <dt>运营主体</dt><dd>周洲</dd>
+        <dt>联系邮箱</dt><dd><a href="mailto:3536689119@qq.com">3536689119@qq.com</a></dd>
+        <dt>联系电话</dt><dd><a href="tel:+8618952750085">18952750085</a></dd>
+        <dt>联系地址</dt><dd>江苏省扬州市邗江区汊河街道</dd>
+        <dt>响应时限</dt><dd>收到请求并核验后 15 个工作日内答复</dd>
+      </dl>
+    </div>
+    <p>若您对我们的答复不满意，或认为我们的信息处理行为损害了您的合法权益，您可以向<strong>网信、电信、公安、市场监督管理</strong>等主管部门投诉或举报，也可以向<strong>被告住所地或合同履行地有管辖权的人民法院</strong>提起诉讼。</p>
+  </section>
+
+  <section class="chapter" id="appe">
+    <h2><span class="num">A</span>附录：游戏信息与清单</h2>
+
+    <h3>附录 A-1　游戏基本信息</h3>
+    <div class="tbl-wrap">
+      <table>
+        <tbody>
+          <tr><th>游戏名称</th><td>残楼 15F（TENFLOOR）</td></tr>
+          <tr><th>游戏类型</th><td>Q 版像素风 · 丧尸生存 / 搜刮 / 建造（垂直切片）</td></tr>
+          <tr><th>运行方式</th><td>浏览器本地运行的单文件网页游戏（HTML5 + Canvas），美术与音频资源全部内嵌于同一文件</td></tr>
+          <tr><th>是否需要联网</th><td>否。获取游戏文件后可完全离线游玩</td></tr>
+          <tr><th>账号体系</th><td>无</td></tr>
+          <tr><th>内购 / 广告</th><td>无 / 无</td></tr>
+          <tr><th>运营者</th><td>周洲</td></tr>
+          <tr><th>政策版本</th><td>v1.0</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>附录 A-2　本机存储清单</h3>
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr><th>项目</th><th>值</th></tr></thead>
+        <tbody>
+          <tr><td>技术</td><td>Web Storage（localStorage）</td></tr>
+          <tr><td>键名</td><td><code>ruin15-campaign-v1</code></td></tr>
+          <tr><td>内容</td><td>游戏内进度与设置（角色状态、楼层与房间、资源与背包、NPC 状态、视角、情报）</td></tr>
+          <tr><td>是否含个人身份信息</td><td class="yes-no no">否</td></tr>
+          <tr><td>是否上传</td><td class="yes-no no">否</td></tr>
+          <tr><td>是否可删除</td><td class="yes-no no">可随时由用户自行删除</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>附录 A-3　第三方 SDK / 服务清单</h3>
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr><th>SDK 名称</th><th>使用目的</th><th>收集的信息</th><th>是否集成</th></tr></thead>
+        <tbody>
+          <tr><td colspan="4" style="text-align:center;color:var(--green)">无 —— 本游戏未集成任何第三方 SDK 或在线服务</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>附录 A-4　版本更新记录</h3>
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr><th>版本</th><th>日期</th><th>更新内容</th></tr></thead>
+        <tbody>
+          <tr><td>v1.0</td><td>2026-10-23</td><td>首次发布。明确本游戏不收集个人信息、仅在本机保存游戏存档、未集成任何第三方 SDK。</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+</main>
+
+<footer class="doc-foot">
+  <div class="foot-inner">
+    <div class="links">
+      <a href="#main">返回顶部</a>
+      <a href="#toc-title">回到目录</a>
+      <a href="#c10">联系我们</a>
+    </div>
+    <p>本政策的固定访问地址：<span class="url-slot todo">https://xuedinge85-sudo.github.io/tenfloor-privacy/privacy.html</span>（部署后请替换为真实地址）</p>
+    <p class="foot-note">
+      《残楼 15F》（TENFLOOR）隐私政策 · v1.0 · 2026-10-23 生效。<br />
+      本页面为纯静态文档，<strong>自身不加载任何脚本、字体、图片或统计代码</strong>，不收集任何访问者信息。
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>
